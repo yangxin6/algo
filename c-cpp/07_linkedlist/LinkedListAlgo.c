@@ -209,7 +209,7 @@ SinglyLinkedNode* findMiddleNode(SinglyLinkedNode* head) {
     SinglyLinkedNode* fast = head;
     
     // 1. 慢指针走一步，快指针两步
-    while (fast->next != NULL && fast->next->next != NULL) {
+    while (fast->next != NULL && fast->next != NULL) {
         slow = slow->next;
         fast = fast->next->next;
     }
